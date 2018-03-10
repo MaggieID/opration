@@ -1,0 +1,109 @@
+tabsApp = angular.module("tabsApp",["ionic"]);
+tabsApp.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
+/*	消除平台差异*/
+	$ionicConfigProvider.backButton.previousTitleText(false);
+	$ionicConfigProvider.backButton.text("返回");
+	$ionicConfigProvider.backButton.icon("ion-ios-arrow-back");//返回按钮
+	$ionicConfigProvider.tabs.style("ios").position("bottom");//底部栏
+	$ionicConfigProvider.navBar.alignTitle("center");//导航标题
+	$ionicConfigProvider.form.checkbox("circle");//多选按钮
+
+	$urlRouterProvider.otherwise("/tabsUrl/homeUrl");
+    $stateProvider.state("tabs",{
+        url:"/tabsUrl",
+        abstract:true,
+        templateUrl:"./modules/tabs.html"
+    })
+	.state("tabs.home",{
+		url:"/homeUrl",
+        cache:false,
+		views:{
+			tabhome:{
+        templateUrl:"./modules/home/home.html",
+        controller:"homeCtrl"
+			}
+		}		
+	})
+	.state("tabs.sights",{
+    url:"/sightsUrl",
+        cache:false,
+    views:{
+      tabhome:{
+        templateUrl:"./modules/home/sights/sights.html",
+        controller:"sightsCtrl"
+      }
+    }   
+  })
+
+	.state("tabs.hotel",{
+    url:"/hotelUrl",
+        cache:false,
+    views:{
+      tabhome:{
+        templateUrl:"./modules/home/hotel/hotel.html",
+        controller:"hotelCtrl"
+      }
+    }   
+  })
+	 .state("tabs.hoteldesc",{
+    url:"/hoteldescUrl/:hid",
+    cache:false,
+    views:{
+      tabProducts:{
+        templateUrl:"./modules/home/hotel/hoteldesc.html",
+        controller:"hoteldescCtrl"
+      }
+    }   
+  })
+	.state("tabs.find",{
+		url:"/findUrl",
+		views:{
+			tabfind:{
+				templateUrl:"./modules/find/find.html",
+				controller:"findCtrl"
+			}
+		}		
+	})
+	.state("tabs.info",{
+		url:"/infoUrl",
+		views:{
+			tabProducts:{
+				templateUrl:"./modules/info/info.html",
+                controller:"infoCtrl"
+			}
+		}		
+	})
+	/*.state("tabs.proDetailsc",{
+		url:"/proDetailscUrl/:pid",
+		cache:false,
+		views:{
+            tabhome:{
+				templateUrl:"./modules/products/proDetails/proDetails.html",
+                controller:"proDetailsCtrl"
+			}
+		}		
+	})*/
+	.state("tabs.mine",{
+		url:"/mineUrl/:openmodal",
+		cache:false,
+		views:{
+			tabMine:{
+				templateUrl:"./modules/user/user.html",
+				controller:"userCtrl"
+			}
+		}		
+	})
+});
+tabsApp.controller("tabsCtrl",function($scope,$timeout){
+//  console.log(999);
+    /*$scope.start = localStorage.getItem("myId");
+    if($scope.start == true){
+        $state.go("tabs.home")
+    }*/
+});
+
+tabsApp.filter("time",function(){
+    return function(time){
+        return new Date(parseInt(time)*1000).toLocaleString().substr(0,20);
+    }
+});

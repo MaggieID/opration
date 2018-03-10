@@ -1,0 +1,61 @@
+.homeL{
+	height: 230px;
+	width: 100%;
+}
+.homeL img{
+	height: 100%;
+	width: 100%;
+}
+.home-obj{
+    text-align: center;
+}
+.home-obj i{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.home-obj span{
+    color: #000;
+    font-size: 14px;
+}
+.home-obj1{
+    background: url(../../assets/icons/sights.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj2{
+    background: url(../../assets/icons/hotal.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj3{
+    background: url(../../assets/icons/food.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj4{
+    background: url(../../assets/icons/travel.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj5{
+    background: url(../../assets/icons/raiders.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj6{
+    background: url(../../assets/icons/free.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj7{
+    background: url(../../assets/icons/traffic.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj8{
+    background: url(../../assets/icons/album.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.hotela{
+  border-radius: 25px;
+  margin: 5px 0;
+}
+.desc{
+  
+}

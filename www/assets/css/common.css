@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroll-content{
+    background: #F8F8F8;
+}
+.item-icon-left{
+  padding-left: 50px;
+}
+.item-complex .item-content{
+  padding: 16px 16px 16px 16px;
+}
+.button.button-block, .button.button-full{
+  width: 90%;
+  margin: auto;
+}
+.item-button-right{
+  padding-right: 40px;
+}
+
+.bgbtn{
+  background: #F8F8F8;
+}
+.combg{
+  background: url("../../assets/images/personbg.jpg") rgba(0,0,0,0.5);
+  background-size: 100%;
+}
+.nobg{
+    background: none;
+}
+.bgwhite{
+  background: white;
+}
+.bar-orange{
+    background: #FC6E26;
+}
+.bar-white{
+  background: white;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.bule{
+  color: #EF473A;
+}
+.white{
+  color: white;
+}
+.gray{
+  color: gray;
+}
+.blue{
+  color: #389bff;
+}
+.orange{
+    color: orange;
+}
+.oranged{
+    color: #ff4500;
+}
+.purple{
+    color: #800080;
+}
+.black{
+    color: #000000;
+}
+.pointer{
+  cursor: pointer;
+}
+.font-bold{
+  font-weight: bold;
+}
+.f12{
+  font-size: 12px;
+}
+.f14{
+  font-size: 14px;
+}
+.f15{
+  font-size: 15px;
+}
+.f18{
+  font-size: 18px;
+}
+.f20{
+  font-size: 20px;
+}
+.p0{
+  padding: 0px;
+}
+.p5{
+  padding: 5px;
+}
+.p10{
+  padding: 10px;
+}
+.p15{
+  padding: 15px;
+}
+.m5{
+    margin:10px 5px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt15{
+    margin-top: 10px;
+}
+.mtb10{
+  margin: 10px 0;
+}
+.mtb15{
+  margin: 15px 0;
+}
+.mb5{
+  margin-bottom: 5px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.mrl15{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mrl20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text-center{
+  text-align: center;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}

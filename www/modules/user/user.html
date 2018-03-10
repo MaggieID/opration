@@ -1,0 +1,82 @@
+<ion-view view-title="我的" hide-nav-bar="true">
+  <ion-content>
+    <!--<ion-list class="userlr" ng-click="loginShow()">
+      <ion-item class="item-thumbnail-left item-icon-right">
+        <img ng-src="{{user}}" class="myTou">
+        <div class="pointer logReg">{{userList.userName}}</div>
+        <i class="icon ion-ios-arrow-right gray"></i>
+      </ion-item>
+    </ion-list>-->
+    <div class="combg user">
+      <div class="logo">
+        <img ng-src="{{user}}" class="myTou"/>
+      </div>
+      <p class="text-center f20 font-bold" 
+        ng-click="loginShow()" style="color: #11c1f3">{{userList.userName}}</p>
+    </div>
+    <ul class="row ">
+      <li class="col col-33">
+        <i class="user-obj1"></i>
+        <span>充 值</span>
+      </li>
+      <li class="col col-33">
+        <i class="user-obj2"></i>
+        <span>提 现</span>
+      </li>
+      <li class="col col-33">
+        <i class="user-obj3"></i>
+        <span>实名认证</span>
+      </li>
+      <li class="col col-33">
+        <i class="user-obj1"></i>
+        <span>充 值</span>
+      </li>
+      <li class="col col-33">
+        <i class="user-obj2"></i>
+        <span>提 现</span>
+      </li>
+      <li class="col col-33">
+        <i class="user-obj3"></i>
+        <span>实名认证</span>
+      </li>
+    </ul>
+    <ion-list>
+      <ion-item class="mt5">
+        <div class="item-button-right item-icon-left">
+          <i class="icon ion-compose oranged"></i>
+          <span class="font-bold">我的收藏</span>
+          <button class="button button-clear">
+                       <i class="icon ion-ios-arrow-forward bule"></i>
+                   </button>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="item-button-right item-icon-left">
+          <i class="icon ion-umbrella blue"></i>
+          <span class="font-bold">风险测试</span>
+          <button class="button button-clear">
+                       <i class="icon ion-ios-arrow-forward bule"></i>
+                   </button>
+        </div>
+      </ion-item>
+      <ion-item>
+        <div class="item-button-right item-icon-left">
+          <i class="icon ion-headphone bule"></i>
+          <span class="font-bold">客服帮助</span>
+          <button class="button button-clear">
+                       <i class="icon ion-ios-arrow-forward bule"></i>
+                   </button>
+        </div>
+      </ion-item>
+      <ion-item ng-click="settingShow()">
+        <div class="item-button-right item-icon-left">
+          <i class="icon ion-ios-gear-outline purple"></i>
+          <span class="font-bold">设置</span>
+          <button class="button button-clear">
+                       <i class="icon ion-ios-arrow-forward bule"></i>
+                   </button>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

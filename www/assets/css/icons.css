@@ -1,0 +1,54 @@
+
+.ion-find-on{
+	background: url(../../assets/icons/findon.png) no-repeat center;
+	background-size: 35%;
+	color: #FC6E26;
+}
+.ion-find-off{
+	background: url(../../assets/icons/findoff.png) no-repeat center;
+	background-size: 35%;
+}
+.ion-info-on{
+	background: url(../../assets/icons/prodon@2x.png) no-repeat center;
+	background-size: 37%;
+}
+.ion-info-off{
+	background: url(../../assets/icons/prodoff@2x.png) no-repeat center;
+	background-size: 37%;
+}
+.ion-home-on{
+	background: url(../../assets/icons/buy.png) no-repeat center;
+	background-size: 38%;
+	color: #FC6E26;
+}
+.ion-home-off{
+	background: url(../../assets/icons/homeoff.png) no-repeat center;
+	background-size: 38%;
+}
+.ion-mine-on{
+	background: url(../../assets/icons/pre@2x.png) no-repeat center;
+	background-size: 33%;
+}
+.ion-mine-off{
+	background: url(../../assets/icons/preoff@2x.png) no-repeat center;
+	background-size: 33%;
+}
+
+.closeeye{
+	background: url(../../assets/icons/closeeye.png) no-repeat center;
+	background-size: 75%;
+}
+
+.openeye{
+	background: url(../../assets/icons/openeye.png) no-repeat center;
+}
+
+.tixan{
+	background: url(../../assets/icons/tixian.jpg) no-repeat center;
+	background-size: 75%;
+}
+.icons{
+	height: 32px;
+	width: 32px;
+}
+

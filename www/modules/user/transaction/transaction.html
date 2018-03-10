@@ -1,0 +1,37 @@
+<ion-modal-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="buttons">
+            <button class="button icon ion-ios-arrow-back button-clear" ng-click="closetransaction()">返回</button>
+        </div>
+        <h1 class="title">交易记录</h1>
+    </ion-header-bar>
+	<ion-content overflow-scroll="false">
+        <ion-refresher
+                spinner="ios"
+                pulling-text="正在更新数据，请稍后"
+                on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <ion-list class="proList">
+            <ion-item class="mt10" ng-repeat="tran in transactions">
+                <!--<div class="tranTitle">第{{tran.id}}条资金记录</div>-->
+                <div class="borb">
+                    <img src="./assets/icons/qitou.png" style="width: 18px;margin-right: 5px"/>
+                	<span class="f16">资金状态{{tran.id}}:{{tran.type}}</span>
+                </div>
+                <div class="mt10">
+                    <p>交易时间：<span class="f16 gray">{{tran.time | time}}</span></p>
+                    <p>交易金额：<span class="bule f20">{{tran.salevalue}}</span>元</p>
+                    <p>交易项目：<span class="f18 gray font-bold">{{tran.productname}}</span></p>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-infinite-scroll
+                ng-if="isnotlast"
+                spinner="android"
+                on-infinite="loadMore()"
+                distance="1%">
+        </ion-infinite-scroll>
+	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,29 @@
+<ion-view view-title="酒店">
+  <div class="bar bar-subheader">
+    <h2 class="title">
+      <ui class="row" style="height: 45px;line-height: 25px;font-size: 14px;color: gray;">
+        <li class="col col-25" style="color: #11c1f3;">推荐排序∨</li>
+        <li class="col col-25">星级价格∨</li>
+        <li class="col col-25">位置区域∨</li>
+        <li class="col col-25">筛选∨</li>
+      </ui>
+    </h2>
+  </div>
+  <ion-content style="margin-top: 45px;">
+    <ion-refresher spinner="ios" pulling-text="正在更新数据，请稍后" on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list>
+      <ion-item class="item-thumbnail-left" ng-repeat="hotel in hotelList" ui-sref="tabs.hoteldesc({hid:hotel.hid})">
+        <img ng-src="http://localhost/travel-server{{hotel.hotelpic}}">
+        <h2>{{hotel.hotelname}}</h2>
+        <p> 星级：{{hotel.star_level}}颗星
+          <span style="float: right;color: orangered;font-size: 16px;">￥ {{hotel.price}} 起</span>
+        </p>
+        <p>{{hotel.address}}</p>
+        <p>电话：{{hotel.phone}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll ng-if="isnotlast" spinner="android" on-infinite="loadMore()" distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

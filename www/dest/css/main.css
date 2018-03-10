@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroll-content{
+    background: #F8F8F8;
+}
+.item-icon-left{
+  padding-left: 50px;
+}
+.item-complex .item-content{
+  padding: 16px 16px 16px 16px;
+}
+.button.button-block, .button.button-full{
+  width: 90%;
+  margin: auto;
+}
+.item-button-right{
+  padding-right: 40px;
+}
+
+.bgbtn{
+  background: #F8F8F8;
+}
+.combg{
+  background: url("../../assets/images/personbg.jpg") rgba(0,0,0,0.5);
+  background-size: 100%;
+}
+.nobg{
+    background: none;
+}
+.bgwhite{
+  background: white;
+}
+.bar-orange{
+    background: #FC6E26;
+}
+.bar-white{
+  background: white;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.bule{
+  color: #EF473A;
+}
+.white{
+  color: white;
+}
+.gray{
+  color: gray;
+}
+.blue{
+  color: #389bff;
+}
+.orange{
+    color: orange;
+}
+.oranged{
+    color: #ff4500;
+}
+.purple{
+    color: #800080;
+}
+.black{
+    color: #000000;
+}
+.pointer{
+  cursor: pointer;
+}
+.font-bold{
+  font-weight: bold;
+}
+.f12{
+  font-size: 12px;
+}
+.f14{
+  font-size: 14px;
+}
+.f15{
+  font-size: 15px;
+}
+.f18{
+  font-size: 18px;
+}
+.f20{
+  font-size: 20px;
+}
+.p0{
+  padding: 0px;
+}
+.p5{
+  padding: 5px;
+}
+.p10{
+  padding: 10px;
+}
+.p15{
+  padding: 15px;
+}
+.m5{
+    margin:10px 5px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt15{
+    margin-top: 10px;
+}
+.mtb10{
+  margin: 10px 0;
+}
+.mtb15{
+  margin: 15px 0;
+}
+.mb5{
+  margin-bottom: 5px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.mrl15{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.mrl20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text-center{
+  text-align: center;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.choose{
+    border: 1px solid white;
+    width: 100px;
+    height: 25px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.choose span{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+}
+.click{
+    background: white;
+    color: #11C1F3;
+}
+.homeL{
+	height: 230px;
+	width: 100%;
+}
+.homeL img{
+	height: 100%;
+	width: 100%;
+}
+.home-obj{
+    text-align: center;
+}
+.home-obj i{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.home-obj span{
+    color: #000;
+    font-size: 14px;
+}
+.home-obj1{
+    background: url(../../assets/icons/sights.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj2{
+    background: url(../../assets/icons/hotal.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj3{
+    background: url(../../assets/icons/food.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj4{
+    background: url(../../assets/icons/travel.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj5{
+    background: url(../../assets/icons/raiders.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj6{
+    background: url(../../assets/icons/free.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj7{
+    background: url(../../assets/icons/traffic.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.home-obj8{
+    background: url(../../assets/icons/album.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.hotela{
+  border-radius: 25px;
+  margin: 5px 0;
+}
+.desc{
+  
+}
+
+
+.ion-find-on{
+	background: url(../../assets/icons/findon.png) no-repeat center;
+	background-size: 35%;
+	color: #FC6E26;
+}
+.ion-find-off{
+	background: url(../../assets/icons/findoff.png) no-repeat center;
+	background-size: 35%;
+}
+.ion-info-on{
+	background: url(../../assets/icons/prodon@2x.png) no-repeat center;
+	background-size: 37%;
+}
+.ion-info-off{
+	background: url(../../assets/icons/prodoff@2x.png) no-repeat center;
+	background-size: 37%;
+}
+.ion-home-on{
+	background: url(../../assets/icons/buy.png) no-repeat center;
+	background-size: 38%;
+	color: #FC6E26;
+}
+.ion-home-off{
+	background: url(../../assets/icons/homeoff.png) no-repeat center;
+	background-size: 38%;
+}
+.ion-mine-on{
+	background: url(../../assets/icons/pre@2x.png) no-repeat center;
+	background-size: 33%;
+}
+.ion-mine-off{
+	background: url(../../assets/icons/preoff@2x.png) no-repeat center;
+	background-size: 33%;
+}
+
+.closeeye{
+	background: url(../../assets/icons/closeeye.png) no-repeat center;
+	background-size: 75%;
+}
+
+.openeye{
+	background: url(../../assets/icons/openeye.png) no-repeat center;
+}
+
+.tixan{
+	background: url(../../assets/icons/tixian.jpg) no-repeat center;
+	background-size: 75%;
+}
+.icons{
+	height: 32px;
+	width: 32px;
+}
+
+
+.userlr .item{
+    background: url("../../assets/images/personbg.jpg") !important;
+    background-size: 100% 100%;
+}
+.user{
+    height: 200px;
+    padding-top: 5px;
+    color: white;
+}
+.userImg{
+	height: 70px;
+	text-align: center;
+    margin-top: 10px;
+}
+.touxiang{
+    width: 70px;
+    height: 100%;
+    margin: auto;
+}
+.touxiang img{
+	height: 100%;
+}
+.logReg{
+    font-size: 18px;
+    margin-top: 30px;
+    color: white;
+}
+.logo{
+	height: 90px;
+	margin-top: 35px;
+	/*background: lavender;*/
+	text-align: center;
+}
+.logo img{
+	height: 100%;
+}
+.input-label{
+	width: 15%;
+	font-weight: bold;
+}
+
+.allCap{
+	background: white;
+	float: right;
+}
+.allCap img{
+	width: 20px;
+	height: 20px;
+	/*vertical-align: middle;*/
+	margin: 0 15px;
+}
+.allCap .allNum{
+	font-size: 23px;
+	display: inline-block;
+	font-weight: bold;
+}
+.mymoney{
+	height: 80px;
+    padding: 15px;
+}
+.monright{
+	/*padding:18px 0;*/
+	display: inline-block;
+	font-size: 20px;
+	/*height: 60px;*/
+    width: 100%;
+    text-align: right;
+	/*line-height: 60px;*/
+}
+.mymoney p{
+	font-size: 18px;
+	color: #EF473A;
+	font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.user-obj{
+	background: #fff;
+    text-align: center;
+}
+.user-obj li:nth-child(2){
+	border-left: 1px solid gainsboro;
+	border-right: 1px solid gainsboro;
+}
+.user-obj i{
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.user-obj span{
+    color: #000;
+    font-size: 14px;
+}
+
+.recImg{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 15px;
+}
+.recImg img{
+	width: 50px;
+	height: 50px;
+}
+.tixian{
+	padding: 15px 0 5px 15px;
+	margin-bottom: 15px;
+}
+.tixian1{
+	display: table;
+	width: 100%;
+	margin: 5px 0;
+}
+.tixtop{
+    height: 30px;
+}
+.yuan{
+	float: left;
+	font-size: 30px;
+}
+.tixian1 input[type=number]{
+	float: left;
+	font-size: 45px;
+	width: calc(100% - 45px);
+	border-bottom: 1px solid gainsboro;
+	padding: 5px 10px;
+}
+.myTou{
+    border-radius: 50px;
+}
+.tranTitle{
+    background: gainsboro;
+    height: 25px;
+    padding: 5px 10px;
+    color: gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+.remember{
+	/*width: 200px;*/
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	font-size: 16px
+}
+.logicon{
+  border: 1px solid gainsboro;
+  border-radius: 35px;
+  padding-top: 10px;
+}
+.log-obj1{
+    background: url(../../assets/icons/weixin.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.log-obj2{
+    background: url(../../assets/icons/qq.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.log-obj3{
+    background: url(../../assets/icons/weibo.png) no-repeat center;
+    background-size: 100% 100%;
+}

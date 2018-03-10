@@ -1,0 +1,24 @@
+<ion-view>
+	<ion-tabs class="tabs-stable tabs-icon-top">
+
+	  <ion-tab title="首页" ui-sref="tabs.home" icon-on="ion-home-on" icon-off="ion-home-off">
+	    <!-- 标签 1 内容 -->
+	    <ion-nav-view name="tabhome"></ion-nav-view>		
+	  </ion-tab>
+		<ion-tab title="发现" ui-sref="tabs.find" icon-on="ion-find-on" icon-off="ion-find-off">
+	    <!-- 标签 2 内容 -->
+	    <ion-nav-view name="tabfind"></ion-nav-view>
+	  </ion-tab>
+        <ion-tab title="消息" ui-sref="tabs.info" icon-on="ion-info-on" icon-off="ion-info-off">
+            <!-- 标签 3 内容 -->
+            <ion-nav-view name="tabProducts"></ion-nav-view>
+        </ion-tab>
+	  <ion-tab title="我的" ui-sref="tabs.mine" icon-on="ion-mine-on" icon-off="ion-mine-off">
+	    <!-- 标签 4内容 -->
+	    <ion-nav-view name="tabMine"></ion-nav-view>		
+	  </ion-tab>	
+	</ion-tabs>
+	  <ion-nav-bar class="bar-calm">
+			<ion-nav-back-button></ion-nav-back-button>
+	  </ion-nav-bar>
+</ion-view>

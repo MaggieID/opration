@@ -1,0 +1,21 @@
+.choose{
+    border: 1px solid white;
+    width: 100px;
+    height: 25px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.choose span{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+}
+.click{
+    background: white;
+    color: #11C1F3;
+}

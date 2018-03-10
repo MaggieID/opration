@@ -1,0 +1,32 @@
+<ion-modal-view>
+	<ion-header-bar align-title="center" class="bar-assertive">
+	    <div class="buttons">
+	    	<button class="button icon ion-ios-arrow-back button-clear" ng-click="closerecharge()">返回</button>
+	    </div>
+	    <h1 class="title">账户充值</h1>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list class="card">
+			<ion-item>
+				<div class="item-icon-right">
+					<div class="recImg">
+						<img src="./assets/images/BANK_CCB.png">
+					</div>			
+					<div class="left">
+						<h2>中国建设银行</h2>
+			        	<p>尾号3666</p>
+					</div>	        
+			        <i class="icon ion-ios-arrow-forward gray"></i>
+			    </div>
+			</ion-item>
+			<ion-item class="item-divider gray">该次本卡最多可充值10,000.00元</ion-item>
+			<ion-item class="p5">
+				<label class="item-input" id="">
+				    <span class="input-label">金额</span>
+				    <input type="text" placeholder="请输入充值金额" ng-model="rech.money">
+			    </label>
+			</ion-item>
+		</ion-list>
+		<button class="button button-block button-assertive" ng-click="rechargeBtn()">下一步</button>
+	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,101 @@
+<ion-view view-title="景点">
+  <ion-content>
+        <ion-slide-box does-continue="true" auto-play="true" slide-interval="3000" show-pager="true">
+            <ion-slide>
+                <div class="homeL">
+                    <img src="./assets/images/1.jpg"/>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeL">
+                    <img src="./assets/images/2.jpg"/>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeL">
+                    <img src="./assets/images/3.jpg"/>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeL">
+                    <img src="./assets/images/4.jpg"/>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeL">
+                    <img src="./assets/images/5.jpg"/>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <ul class="row home-obj bgwhite">
+            <li class="col col-25">
+                <i class="home-obj1"></i>
+                <span>每日签到</span>
+            </li>
+            <li class="col col-25">
+                <i class="home-obj2"></i>
+                <span>邀请有奖</span>
+            </li>
+            <li class="col col-25" ui-sref="tabs.safety">
+                <i class="home-obj3"></i>
+                <span>安全保障</span>
+            </li>
+            <li class="col col-25">
+                <i class="home-obj4"></i>
+                <span>积分商城</span>
+            </li>
+        </ul>
+        <ion-slide-box  does-continue="true" auto-play="true" slide-interval="4000" show-pager="false" on-slide-changed="chaPage()">
+            <ion-slide  ng-repeat="recommend in recomData">
+                <div class="box myrecom">
+                    <div class="recom">
+                        <div>
+                            <span class="productname">{{recommend.productname}}</span>
+                            <h1 class="rate">{{(recommend.rate)*100 | number:1}}%</h1>
+                            <p class="font-bold">预期年化收益</p>
+                        </div>
+                        <div>
+                            <div class="shui">
+                                <p>100元起投</p>
+                                <span>超高收益</span>
+                            </div>
+                            <div class="shui">
+                                <p>期限{{recommend.time}}天</p>
+                                <span>安心兑付</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button-block button-assertive"
+                            ui-sref="tabs.proDetailsc({pid:recommend.id})">立即抢购</button></div>
+            </ion-slide>
+        </ion-slide-box>
+
+    <div class="row row-wrap cap-obj">
+            <div class="col col-33">
+                <i class="cap-obj1"></i>
+                <span>精选理财</span>
+            </div>
+            <div class="col col-33">
+                <i class="cap-obj2"></i>
+                <span>办信用卡</span>
+            </div>
+            <div class="col col-33">
+                <i class="cap-obj3"></i>
+                <span>股票开户</span>
+            </div>
+            <div class="col col-33">
+                <i class="cap-obj4"></i>
+                <span>查公积金</span>
+            </div>
+            <div class="col col-33">
+                <i class="cap-obj6"></i>
+                <span>理财问诊</span>
+            </div>
+            <div class="col col-33">
+                <i class="cap-obj5"></i>
+                <span>信用贷</span>
+            </div>
+        </div>
+        <p class="text-center gray f12">提供专业基金保障</p>
+  </ion-content>
+</ion-view>

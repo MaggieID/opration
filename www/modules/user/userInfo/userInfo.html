@@ -1,0 +1,81 @@
+<ion-modal-view>
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <div class="buttons">
+            <button class="button icon ion-ios-arrow-back button-clear" ng-click="closeuaerInfo()">返回</button>
+        </div>
+        <h1 class="title">个人资料</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="combg user">
+            <div class="logo">
+                <img src="./assets/images/logo.png"/>
+            </div>
+            <p class="white text-center f20 font-bold">金猪宝</p>
+        </div>
+        <ion-list>
+            <ion-item>
+                <div class="item-icon-right">
+                    <span class="font-bold">昵称</span>
+                    <div class="right">{{userList.userName}}</div>
+                    <i class="icon ion-ios-arrow-forward gray"></i>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="item-icon-right">
+                    <span class="font-bold">手机号码</span>
+                    <div class="right">{{phone}}</div>
+                    <i class="icon ion-ios-arrow-forward gray"></i>
+                </div>
+            </ion-item>
+            <ion-item class="mt5 item-input item-select">
+            	<div class="input-label">性别</div>
+				    <select>
+				        <option selected>请选择</option>
+				        <option>男</option>				      
+				        <option>女</option>
+				    </select>
+                </div>
+            </ion-item>
+            <ion-item class="item-input item-select">
+            	<div class="input-label">生日</div>
+				    <select>
+				        <option selected>请选择</option>
+				        <option>男</option>				      
+				        <option>女</option>
+				    </select>
+                </div>
+            </ion-item>
+            <ion-item class="item-input item-select">
+            	<div class="input-label">婚姻状况</div>
+				    <select>
+				        <option selected>请选择</option>
+				        <option>已婚</option>				      
+				        <option>未婚</option>
+				    </select>
+                </div>
+           </ion-item>
+           <ion-item class="item-input item-select">
+            	<div class="input-label">学历</div>
+				    <select>
+				        <option selected>请选择</option>
+				        <option>初中</option>				      
+				        <option>高中</option>
+				        <option>大专</option>				      
+				        <option>本科</option>
+				    </select>
+                </div>
+           </ion-item>
+           <ion-item class="item-input item-select">
+            	<div class="input-label">收入水平</div>
+				    <select>
+				        <option selected>请选择</option>
+				        <option>2000~5000</option>				      
+				        <option>5000~10000</option>
+				        <option>10000~15000</option>				      
+				        <option>15000~25000</option>
+				    </select>
+                </div>
+           </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

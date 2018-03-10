@@ -1,0 +1,167 @@
+.userlr .item{
+    background: url("../../assets/images/personbg.jpg") !important;
+    background-size: 100% 100%;
+}
+.user{
+    height: 200px;
+    padding-top: 5px;
+    color: white;
+}
+.userImg{
+	height: 70px;
+	text-align: center;
+    margin-top: 10px;
+}
+.touxiang{
+    width: 70px;
+    height: 100%;
+    margin: auto;
+}
+.touxiang img{
+	height: 100%;
+}
+.logReg{
+    font-size: 18px;
+    margin-top: 30px;
+    color: white;
+}
+.logo{
+	height: 90px;
+	margin-top: 35px;
+	/*background: lavender;*/
+	text-align: center;
+}
+.logo img{
+	height: 100%;
+}
+.input-label{
+	width: 15%;
+	font-weight: bold;
+}
+
+.allCap{
+	background: white;
+	float: right;
+}
+.allCap img{
+	width: 20px;
+	height: 20px;
+	/*vertical-align: middle;*/
+	margin: 0 15px;
+}
+.allCap .allNum{
+	font-size: 23px;
+	display: inline-block;
+	font-weight: bold;
+}
+.mymoney{
+	height: 80px;
+    padding: 15px;
+}
+.monright{
+	/*padding:18px 0;*/
+	display: inline-block;
+	font-size: 20px;
+	/*height: 60px;*/
+    width: 100%;
+    text-align: right;
+	/*line-height: 60px;*/
+}
+.mymoney p{
+	font-size: 18px;
+	color: #EF473A;
+	font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.user-obj{
+	background: #fff;
+    text-align: center;
+}
+.user-obj li:nth-child(2){
+	border-left: 1px solid gainsboro;
+	border-right: 1px solid gainsboro;
+}
+.user-obj i{
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.user-obj span{
+    color: #000;
+    font-size: 14px;
+}
+
+.recImg{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 15px;
+}
+.recImg img{
+	width: 50px;
+	height: 50px;
+}
+.tixian{
+	padding: 15px 0 5px 15px;
+	margin-bottom: 15px;
+}
+.tixian1{
+	display: table;
+	width: 100%;
+	margin: 5px 0;
+}
+.tixtop{
+    height: 30px;
+}
+.yuan{
+	float: left;
+	font-size: 30px;
+}
+.tixian1 input[type=number]{
+	float: left;
+	font-size: 45px;
+	width: calc(100% - 45px);
+	border-bottom: 1px solid gainsboro;
+	padding: 5px 10px;
+}
+.myTou{
+    border-radius: 50px;
+}
+.tranTitle{
+    background: gainsboro;
+    height: 25px;
+    padding: 5px 10px;
+    color: gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+.remember{
+	/*width: 200px;*/
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	font-size: 16px
+}
+.logicon{
+  border: 1px solid gainsboro;
+  border-radius: 35px;
+  padding-top: 10px;
+}
+.log-obj1{
+    background: url(../../assets/icons/weixin.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.log-obj2{
+    background: url(../../assets/icons/qq.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.log-obj3{
+    background: url(../../assets/icons/weibo.png) no-repeat center;
+    background-size: 100% 100%;
+}

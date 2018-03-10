@@ -1,0 +1,45 @@
+<ion-view>
+  
+  <ion-nav-title>{{hotel.hotelname}}</ion-nav-title>
+  <ion-content>
+    <!-- <ion-list style="">
+      <ion-item class="item-thumbnail-left" style="padding-left: 130px;height: 145px; 
+        background: url(./assets/images/hotel.jpg);">
+        <img ng-src="http://localhost/travel-server{{hotel.hotelpic}}" 
+          style="max-height: 120px;max-width: 100px;border: 1px solid wheat;">
+        <h2 style="font-weight: bold;">{{hotel.hotelname}}</h2>
+        <p> 星级：{{hotel.star_level}}颗星
+         
+        </p>
+        <p>{{hotel.address}}</p>
+        <p>电话：{{hotel.phone}}</p>
+      </ion-item>
+    </ion-list>-->
+    <div id="" class="homeL">
+      <img ng-src="http://localhost/travel-server{{hotel.hotelpic}}">
+    </div>
+    <ion-list style="">
+      <ion-item class="item-icon-right hotela">
+        <span class="orange">★ {{hotel.star_level}}颗星</span>
+        <span style="float: right;font-size: 16px;" class="oranged">价格 ￥ {{hotel.price}} 起</span>
+      </ion-item>
+      <ion-item class="item-icon-right hotela">
+        地址：{{hotel.address}}
+        <i class="icon ion-ios-location-outline orange"></i>
+      </ion-item>
+      <ion-item class="item-icon-right hotela">
+        电话：{{hotel.phone}}
+        <i class="icon ion-ios-telephone-outline blue"></i>
+      </ion-item>
+      <ion-item class="item-icon-left">
+        酒店简介
+        <i class="icon ion-android-home green"></i>
+      </ion-item>
+    </ion-list>
+    
+    <div class="desc">
+      {{hotel.hotel_desc}}
+    </div>
+    <p class="text-center gray f12 mtb15">{{hotel.hotelname}}欢迎您入住</p>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,61 @@
+<ion-modal-view>
+	<ion-header-bar align-title="center" class="bar-calm">
+	    <div class="buttons">
+	    	<button class="button icon ion-ios-arrow-back button-clear" ng-click="closereg()">返回</button>
+	    </div>
+	    <h1 class="title">注册</h1>
+	</ion-header-bar>
+	<ion-content>
+		<div class="combg user">
+			<div class="logo">
+				<img src="./assets/images/logo.png"/>
+			</div>	
+			<p class="white text-center f20 font-bold">金猪宝</p>
+		</div>
+		<ion-list>
+            <ion-item class="p5">
+                <label class="item-input item-icon-left" id="username">
+                    <!--<span class="input-label">手机号码</span>-->
+                    <i class="icon ion-person"></i>
+                    <input type="text" placeholder="请输入您的昵称" ng-model="reg.username">
+                </label>
+            </ion-item>
+			<ion-item class="p5">
+				<label class="item-input item-icon-left" id="phone">
+				    <!--<span class="input-label">手机号码</span>-->
+				    <i class="icon ion-android-phone-portrait"></i>
+				    <input type="text" placeholder="请输入您的手机号码" ng-model="reg.phone">
+			    </label>
+			</ion-item>
+			<ion-item class="p5">
+				<label class="item-input item-icon-left" id="passwd">
+				    <!--<span class="input-label">登录密码</span>-->
+				    <i class="icon ion-locked"></i>
+				    <input type="password" placeholder="请输入您的密码" ng-model="reg.password">				    
+			    </label>
+			</ion-item>
+			<ion-item class="p5">
+				<label class="item-input item-icon-left" id="confirm">
+				    <!--<span class="input-label">确认密码</span>-->
+				    <i class="icon ion-ios-locked"></i>
+				    <input type="password" placeholder="请重复输入您的密码" ng-model="reg.repassword">
+			    </label>
+			</ion-item>
+			<ion-item class="p5  item-button-right">
+				<label class="item-input item-icon-left">
+				    <!--<span class="input-label">验证码</span>-->
+				    <i class="icon ion-ios-locked-outline"></i>
+				    <input type="text" placeholder="请输入验证码" ng-model="reg.code">
+			    </label>	
+			    <button class="button button-clear" style="color: #888;"
+				    	ng-click="getCode()" ng-disabled="canClick">{{description}}</button>
+			</ion-item>
+		</ion-list>		
+		<p class="mrl20 mtb10">
+            <input type="checkbox" checked="ischecked" ng-click="isclick()"/>
+            我已确定并同意“网站服务协议”</p>
+		<div class="text-center f18 bule mb10">{{errorinfo}}</div>
+		<button class="button button-block button-calm" ng-click="doReg()">确定</button>
+		<p class="mt15 text-center bgbtn" ng-click="closereg()">已有账号？<span class="blue">去登录</span></p>
+	</ion-content>
+</ion-modal-view>
